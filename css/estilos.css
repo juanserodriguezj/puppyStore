@@ -4,6 +4,7 @@ html,body{
     font-size: 12px;
     font-family: system-ui;
 }
+/* Barra de navegacion  */
 nav{
     display: flex;
     background: lightgreen;
@@ -25,4 +26,29 @@ nav li a{
 }
 nav li a:hover{
     color: white;
+}
+/* Barra de navegacion  */
+
+/* Main Section */
+
+.main-section{
+    padding: 20%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    height: 200px;
+    background-size: cover;
+    background-position: center top;
+    padding: 15%;
+    display: flex;
+}
+.product{
+    padding: 10px;
+
+}
+.product .content{
+    background-color: white;
+    padding: 20px;
 }
