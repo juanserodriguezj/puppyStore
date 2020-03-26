@@ -1,146 +1,166 @@
-html,body{
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/*------ Variables */
+:root{
+    /*------ Colores */
+    --green-color: #7ACC2D;
+    --black-color: #313337;
+    --white-color: white;
+    /*------ Tipografía */
+    --normal:12px;
+    /*------ Espaciado */
+    --space:10px;
+    --space-2:20px;
+  }
+  
+  /* -------------------------------------------  */
+  html, body{
+    margin:0;
     padding: 0;
-    margin: 0;
-    font-size: 12px;
-    font-family: system-ui;
-}
-/* Barra de navegacion  */
-nav{
+    font-family: helvetica;
+    color: var(--black-color);
+  }
+  
+  p{
+    font-size: var(--normal);
+  }
+  
+  nav{
     display: flex;
-    background: lightgreen;
-    padding: 10px;
-    color: white;
     justify-content: space-between;
     align-items: center;
-}
-nav ul{
-    display: flex;
-}
-nav li{
-    padding-left: 20px;
-    list-style:none;
-}
-nav li a{
+    width: 100%;
+    padding: var(--space);
+    min-height: 60px;
+    background-color: var(--green-color);
+  }
+  
+  nav a{
     text-decoration: none;
-    color: gray;
-}
-nav li a:hover{
-    color: white;
-}
-/* Barra de navegacion  */
-
-/* Main Section */
-
-.main-section{
-    padding: 10%;
-    text-align: center;
-    justify-content: center;
-    /* border: 5px solid yellow; */
-}
-
-.products{
-    background-image: url("../images/curve.png");
-    max-height: 50px;
-    background-size: cover;
-    background-position: center top;
-    padding: 10%;
+    color: var(--black-color);
+    font-size: var(--normal);
+  }
+  
+  nav a:hover{
+    color: var(--white-color);
+  }
+  
+  nav ul {
     display: flex;
-    /* border: 5px solid red; */
-    justify-content: center;
-    
-}
-.product{
-    /* border: 5px solid blue; */
-    padding: 10px;
-    margin-top: -160px;
+  }
+  
+  nav ul li{
+    padding-right: 20px;
+    list-style: none;
+  }
+  
+  hr{
+    opacity: .2;
+  }
+  
+  /* ------------------------------------------- MAIN SECTION */
+  
+  .main_section{
     text-align: center;
-    justify-content: center;
-    box-shadow: inset 0 1 rgba(0, 0, 0, .2);
-
-
-}
-.product .content{
-    background-color: white;
-    padding: 10px;
-    
-}
-.img-content{
+    padding: 15%;
+  }
+  
+  /* -------------------------------------------  PRODUCTOS */
+  
+  .products{
+    background-image: url("../images/curve.png");
+    padding: 15%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 95px;
+    background-size: cover;
+  
+  }
+  
+  .product{
+    padding: 20px;
+    margin-top: -226px;
+  }
+  
+  .image-product{
     text-align: center;
-}
-/* Botton */
-.main-button{
-    text-align: center;
-    background: lightgreen;
-    border: 1px solid darkgreen;
-    padding: .6em .8em .8em;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
+  }
+  
+  .content{
+    padding: 20px;
+    background: var(--white-color);
+    border-radius: 3px;
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+  }
+  
+  .main_btn{
+    padding: var(--space);
+    background-color: var(--green-color);
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
     cursor: pointer;
-    
-    outline: 0;
-    transition: .2s;
-    will-change: transform;
-}
-.main-button:active {
-    transform: scale(.9);
-    background-color: #62a262;
-}
-
-/* Beneficios */
-.beneficios{
+    color: var(--white-color);
+  }
+  .main_btn:hover{
+    background-color: #63a426;
+  }
+  
+  /* Beneficios */
+  .beneficios{
     padding: 10%;
     display: flex;
   }
-
+  
   .beneficio{
     text-align: center;
     padding: 20px;
   }
-
-.beneficio img{
+  
+  .beneficio img{
     max-height: 100px
   }
-
-.text_beneficio{
+  
+  .text_beneficio{
     text-align: justify;
   }
-
-  hr{
-    opacity: .2;
-  }
-    
-/* Mentions */
-.mentions{
+  
+  /* Mentions */
+  .mentions{
     display: flex;
     padding: 5%;
   }
-
-.mention img{
+  .mention img{
     width: 100%;
   }
-
-h2.mention_title{
+  h2.mention_title{
     text-align: center;
-}
-.mention{
-    padding: 10px;
   }
-
-.content_mention{
+  .mention{
+    padding: var(--space);
+  }
+  .content_mention{
     box-shadow: 0px 0 2px 1px #e6e5e9;
-}
-.mention .text{
-    padding: 10px;
-}
-/* ------------------------------------------- Footer */
-
-footer{
+  }
+  .mention .text{
+    padding: var(--space);
+  }
+  
+  /* ------------------------------------------- Footer */
+  footer{
     display: flex;
     justify-content: space-between;
-    font-size: var(12px);
-    background-color: #313337;
-    padding: 10px;
-    color: white;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
   }
   
