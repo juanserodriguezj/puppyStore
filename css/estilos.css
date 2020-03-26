@@ -106,6 +106,10 @@ nav li a:hover{
     text-align: justify;
   }
 
+  hr{
+    opacity: .2;
+  }
+    
 /* Mentions */
 .mentions{
     display: flex;
@@ -123,9 +127,20 @@ h2.mention_title{
     padding: 10px;
   }
 
-  .content_mention{
+.content_mention{
     box-shadow: 0px 0 2px 1px #e6e5e9;
-  }
-  .mention .text{
+}
+.mention .text{
     padding: 10px;
+}
+/* ------------------------------------------- Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(12px);
+    background-color: #313337;
+    padding: 10px;
+    color: white;
   }
+  
