@@ -18,6 +18,8 @@
     /*------ Espaciado */
     --space:10px;
     --space-2:20px;
+    /*------ Box shadow */
+    --box: 0px 0 2px 1px #e6e5e9
   }
   
   /* -------------------------------------------  */
@@ -153,7 +155,20 @@
   .mention .text{
     padding: var(--space);
   }
+  /* ------------------------------------------- Venta */
   
+  .modulo-pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+
+  }
+  .modulo-pago-images{
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+  }
+
   /* ------------------------------------------- Footer */
   footer{
     display: flex;
